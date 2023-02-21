@@ -80,6 +80,8 @@ body {
     color: #fff;
 }
 
+
+
 /* ----Header hover ----*/
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
