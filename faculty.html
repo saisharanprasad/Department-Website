@@ -3,7 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  } 
+
+
+  </style>
+
 
   <title>CSIT DEPARTMENT</title>
   <meta content="" name="description">
@@ -22,43 +33,20 @@
 
   <link href="styles.css" rel="stylesheet">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137608318-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-137608318-2');
-  </script>
-
-<style>
-  a:hover {
-    color: blue;
-  }
-
-  a:link{
-    text-decoration: none;
-  }
-  </style>
-
-
-
 
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
         <img src="./logo.png" alt="Avatar Logo" style="width:350px;height:50px;" > 
       </a>
-      <a class="navbar-brand" href="./index.html">
-        <h1 style="text-align:justify">DEPARTMENT OF CSIT</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav">
+      </button>
+      <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto order-0">
            <li class="nav-item active"> <a class="nav-link" href="./index.html">Home </a> </li>
            <li class="nav-item dropdown">
             <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> About us</a>
@@ -67,12 +55,12 @@
                <li><a class="dropdown-item" href="./vision.html"> Vission & Mission</a></li>
              </ul>
          </li>
-           <li class="nav-item"><a class="nav-link" href="#"> Faculty </a></li>
+           <li class="nav-item"><a class="nav-link" href="faculty.html"> Faculty </a></li>
            <li class="nav-item"><a class="nav-link" href="#"> Infrastructure </a></li>
            <li class="nav-item dropdown">
               <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Student Corner  </a>
                <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#"> Timetable </a></li>
+                 <li><a class="dropdown-item" href="#"> Timetable</a></li>
                  <li><a class="dropdown-item" href="#"> Achievements </a></li>
                  <li><a class="dropdown-item" href="#"> E-Resources </a></li>
                  <li><a class="dropdown-item" href="#"> Student Clubs </a></li>
@@ -81,7 +69,7 @@
            <li class="nav-item"><a class="nav-link" href="#"> Contact us </a></li>
        </ul>
       
-
+       </div>
     </div>
   </nav>
 
@@ -97,35 +85,32 @@
   <div class="container-fluid">
     
       <div class="row no-top-margin">
-          <div class="col-sm-12 col-md-6 faculty-col">
-            <div class="row">
-              <div class="col-sm-6">
-                <img class="faculty-img-v2" src="./faculty1.jpg" alt="Picture of the Faculty Member" style="width:300px;height: 250px">
-              </div>
-              <div class="col-sm-6" style="background-color:beige">
-                <h4><a href="" >HN Lakshmi</a></h4>
-                <h4>HOD & Professor</h4>
-                <h5>B-402</h5>
-                <h5><i class="fa fa-envelope"></i>  <a href="mailto:subruk@cse.iith.ac.in">subruk@cse.iith.ac.in</a></h5>
-                <h5 style="font-style:inherit;">Complexity Theory, Probabilistic Techniques, Algebra, Randomized Algorithms</h5>
-              </div>
+        <div class="col-sm-12 col-md-6 faculty-col">
+          <div class="row">
+            <div class="col-sm-6">
+              <img class="faculty-img-v2" src="./faculty1.jpg" alt="Picture of the Faculty Member" style="max-height: 100%;max-width: 100%;">
+            </div>
+            <div class="col-sm-6">
+              <a href="http://www.iith.ac.in/~tbr/" target="_blank" class="faculty-link"><h3>Bheemarjuna Reddy Tamma</h3></a>
+              <h4>Professor</h4>
+              <h5>A-408</h5>
+              <h5><i class="fa fa-envelope"></i>  <a href="mailto:tbr@cse.iith.ac.in">tbr@cse.iith.ac.in</a></h5>
+              <p>Converged Cloud Radio Access Networks, 5G, SDN/NFV, IoT/M2M and Network Security</p>
             </div>
           </div>
-        
-    
+        </div>
       
-          <div class="col-sm-12 col-md-6 faculty-col">
-            <div class="row">
-              <div class="col-sm-6">
-                <img class="faculty-img-v2" src="./faculty2.jpg" alt="Picture of the Faculty Member" style="width:300px;height: 250px">
-              </div>
-              <div class="col-sm-6">
-                <a href="http://www.iith.ac.in/~antony/" target="_blank" class="faculty-link"><h3>Antony Franklin</h3></a>
-                <h4>Associate Professor</h4>
-                <h5>C-412</h5>
-                <h5><i class="fa fa-envelope"></i>  <a href="mailto:antony.franklin@cse.iith.ac.in">antony.franklin@cse.iith.ac.in</a></h5>
-                <h5>Wireless Networks, Mobile Networks,5G Network and Systems, Low Latency transport protocol</h5>
-              </div>
+        <div class="col-sm-12 col-md-6 faculty-col">
+          <div class="row">
+            <div class="col-sm-6">
+              <img class="faculty-img-v2" src="./faculty2.jpg" alt="Picture of the Faculty Member" style="max-height: 100%;max-width: 100%;">
+            </div>
+            <div class="col-sm-6">
+              <a href="http://www.iith.ac.in/~tbr/" target="_blank" class="faculty-link"><h3>Bheemarjuna Reddy Tamma</h3></a>
+              <h4>Professor</h4>
+              <h5>A-408</h5>
+              <h5><i class="fa fa-envelope"></i>  <a href="mailto:tbr@cse.iith.ac.in">tbr@cse.iith.ac.in</a></h5>
+              <h5>Converged Cloud Radio Access Networks, 5G, SDN/NFV, IoT/M2M and Network Security</h5>
             </div>
           </div>
         </div>
@@ -134,7 +119,7 @@
           <div class="col-sm-12 col-md-6 faculty-col">
             <div class="row">
               <div class="col-sm-6">
-                <img class="faculty-img-v2" src="../assets/images/profiles/Bheemarjuna-Reddy-Tamma.jpg" alt="Picture of the Faculty Member">
+                <img class="faculty-img-v2" src="./faculty1.jpg" alt="Picture of the Faculty Member" style="max-width: 100%;max-width: 100%;">
               </div>
               <div class="col-sm-6">
                 <a href="http://www.iith.ac.in/~tbr/" target="_blank" class="faculty-link"><h3>Bheemarjuna Reddy Tamma</h3></a>
