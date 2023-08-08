@@ -1,30 +1,30 @@
 <?php
  
-// Username is root
+
 $user = 'ezyro_33683901';
 $password = 'vbjfz6p';
  
-// Database name is geeksforgeeks
+
 $database = 'ezyro_33683901_csit';
  
-// Server is localhost with
-// port number 3306
+
 $servername='sql105.ezyro.com';
 $mysqli = new mysqli($servername, $user,
                 $password, $database);
  
-// Checking for connections
+
 if ($mysqli->connect_error) {
     die('Connect Error (' .
     $mysqli->connect_errno . ') '.
     $mysqli->connect_error);
 }
  
-// SQL query to select data from database
-$sql = " SELECT * FROM Faculty ";
+
+$sql = " SELECT * FROM Placements ";
 $result = $mysqli->query($sql);
 $mysqli->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,6 +37,8 @@ $mysqli->close();
   .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+  } 
+
 
 html,body
 {
@@ -48,7 +50,7 @@ html,body
     overflow-x: hidden; 
 }
 
-    
+
 
 
 
@@ -56,7 +58,7 @@ html,body
 
 
   <title>CSIT DEPARTMENT</title>
-  <link rel="icon" href="./Images/cvr-logo.jpg" type="image/x-icon">
+    <link rel="icon" href="./Images/cvr-logo.jpg" type="image/x-icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -76,9 +78,9 @@ html,body
 
 </head>
 <body>
-
-    <header style="margin-bottom:70px">
-    <nav class="navbar fixed-top navbar-expand-lg bg-secondary navbar-dark">
+    
+<header style="margin-bottom:70px">
+  <nav class="navbar fixed-top navbar-expand-lg bg-secondary navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">
         <img src="./logo.png" alt="Avatar Logo" style="width:250px;height:50px;" > 
@@ -89,7 +91,7 @@ html,body
       <div class="collapse navbar-collapse " id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto order-0">
            <li class="nav-item active"> <a class="nav-link" href="index.php">Home </a> </li>
-           <li class="nav-item active"> <a class="nav-link" href="./About.html">About us </a> </li>
+            <li class="nav-item active"> <a class="nav-link" href="./About.html">About us </a> </li>
            <li class="nav-item"><a class="nav-link" href="faculty.php"> Faculty </a></li>
            <li class="nav-item"><a class="nav-link" href="infrastructure.html"> Infrastructure </a></li>
            <li class="nav-item"><a class="nav-link" href="placements.php"> Placements </a></li>
@@ -107,38 +109,35 @@ html,body
        </div>
     </div>
   </nav>
-
-  </nav>
   </header>
  
  <div class="container">
-  <h2 style="text-align:center">Faculty</h2>                                                                                     
+  <h2 style="text-align:center">Placements</h2>   
+  <h3 style="text-align:center">Year(2022-23)</h3>   
+  <p style="text-align:justify">The students of Computer Science and Information Technology branch are trained with additional programs apart from the regular classes in the course of getting placed at reputed companies. 
+The Computer Science and Information Technology’s students have been obtaining internships and employments in the top leading MNCs of IT industry. 
+Below are some companies the first batch of CSIT have got placed in through oncampus recruitment drives. </p>                                                                                
   <div class="table-responsive"> 
   <center>         
-  <table class="table table-bordered" style="max-width:60%">
+  <table class="table table-bordered" style="max-width:40%">
     <thead>
       <tr style="border:1px solid black">
         <th style="border:1px solid black">S No</th>
-        <th style="border:1px solid black">Image</th>
-        <th style="border:1px solid black">Faculty Name</th>
-        <th style="border:1px solid black">Designation</th>
-        <th style="border:1px solid black">Qualification</th>
+        <th style="border:1px solid black">Company</th>
+        <th style="border:1px solid black">No. of Students Placed</th>
+        <th style="border:1px solid black">Package</th>
       </tr>
     </thead>
     <tbody>
       <?php
-                // LOOP TILL END OF DATA
                 while($rows=$result->fetch_assoc())
                 {
             ?>
             <tr style="border:1px solid black">
-                <!-- FETCHING DATA FROM EACH
-                    ROW OF EVERY COLUMN -->
-                <td class="text-center align-middle" style="border:1px solid black"><?php echo $rows['S.No'];?></td>
-                <td style="border:1px solid black "><?php echo '<img src="data:image/jpg;base64,'.base64_encode($rows['Image']).'" style="width:100px;height:100px;">';;?></td>
-                <td class="text-center align-middle" style="border:1px solid black "><a href="<?php echo $rows['filename'];?>"><?php echo $rows['Name'];?></a></td>
-                <td class="text-center align-middle" style="border:1px solid black "><?php echo $rows['Designation'];?></td>
-                <td class="text-center align-middle" style="border:1px solid black "><?php echo $rows['Qualification'];?></td>
+                <td style="border:1px solid black"><?php echo $rows['S No'];?></td>
+                <td style="border:1px solid black"><?php echo $rows['Company'];?></td>
+                <td style="border:1px solid black;text-align:center"><?php echo $rows['Number of Students Placed'];?></td>
+                <td style="border:1px solid black"><?php echo $rows['Package'];?></td>
             </tr>
             <?php
                 }
@@ -149,7 +148,6 @@ html,body
   </div>
 </div>
    
-
 <footer id="footer">
   <div class="container-fluid" style="background-color: black; height:50px">
 
@@ -159,7 +157,6 @@ html,body
     
   </div>
   </footer>
-
 
 </body>
  

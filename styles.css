@@ -7,79 +7,6 @@ body {
 }
 
 
-.header {
-    height: 70px;
-    overflow: hidden;
-    background-color: blue;
-    padding: 20px 10px;
-    display:flex;
-    flex-wrap: wrap;
-  }
-  
-  /* Style the header links */
-  .header a {
-    float: right;
-    color: black;
-    text-align: left;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 25px;
-    border-radius: 4px;
-    transition: all 0.5s;
-    z-index: 997;
-  }
-  
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 15px;
-    font-weight: bold;
-    max-height: 60px;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-  
-  /* Float the link section to the right */
-  .header-right {
-    float: right;
-  }
-  
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
-    }
-  }
-
-
-.header .logo {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: #fff;
-}
-
 
 
 /* ----Header hover ----*/
@@ -92,6 +19,8 @@ body {
 
 
 /* ----Slider ----*/
+
+
 
 .carousel-item{
   height:100vh;
@@ -113,15 +42,7 @@ body {
   opacity:0.7;
 }
 
-.carousel-caption{
-  bottom:180px;
-  padding-left:100px;
-  padding-right:100px;
-}
 
-.carousel-caption h5{
-  font-size:100px;
-}
 
 .column {
   float: left;

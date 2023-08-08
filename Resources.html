@@ -1,30 +1,3 @@
-<?php
- 
-// Username is root
-$user = 'ezyro_33683901';
-$password = 'vbjfz6p';
- 
-// Database name is geeksforgeeks
-$database = 'ezyro_33683901_csit';
- 
-// Server is localhost with
-// port number 3306
-$servername='sql105.ezyro.com';
-$mysqli = new mysqli($servername, $user,
-                $password, $database);
- 
-// Checking for connections
-if ($mysqli->connect_error) {
-    die('Connect Error (' .
-    $mysqli->connect_errno . ') '.
-    $mysqli->connect_error);
-}
- 
-// SQL query to select data from database
-$sql = " SELECT * FROM Faculty ";
-$result = $mysqli->query($sql);
-$mysqli->close();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,6 +10,8 @@ $mysqli->close();
   .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+  } 
+
 
 html,body
 {
@@ -48,7 +23,13 @@ html,body
     overflow-x: hidden; 
 }
 
-    
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+
+}
+
 
 
 
@@ -56,7 +37,7 @@ html,body
 
 
   <title>CSIT DEPARTMENT</title>
-  <link rel="icon" href="./Images/cvr-logo.jpg" type="image/x-icon">
+    <link rel="icon" href="./Images/cvr-logo.jpg" type="image/x-icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -72,14 +53,14 @@ html,body
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link href="styles.css" rel="stylesheet">
-
+    
 
 </head>
 <body>
 
     <header style="margin-bottom:70px">
-    <nav class="navbar fixed-top navbar-expand-lg bg-secondary navbar-dark">
-    <div class="container-fluid">
+  <nav class="navbar fixed-top navbar-expand-lg bg-secondary navbar-dark ">
+    <div class="container-fluid" style="margin-left:10px;">
       <a class="navbar-brand" href="index.php">
         <img src="./logo.png" alt="Avatar Logo" style="width:250px;height:50px;" > 
       </a>
@@ -89,7 +70,7 @@ html,body
       <div class="collapse navbar-collapse " id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto order-0">
            <li class="nav-item active"> <a class="nav-link" href="index.php">Home </a> </li>
-           <li class="nav-item active"> <a class="nav-link" href="./About.html">About us </a> </li>
+            <li class="nav-item "> <a class="nav-link" href="./About.html">About us </a> </li>
            <li class="nav-item"><a class="nav-link" href="faculty.php"> Faculty </a></li>
            <li class="nav-item"><a class="nav-link" href="infrastructure.html"> Infrastructure </a></li>
            <li class="nav-item"><a class="nav-link" href="placements.php"> Placements </a></li>
@@ -107,49 +88,37 @@ html,body
        </div>
     </div>
   </nav>
+</header>
 
-  </nav>
-  </header>
- 
- <div class="container">
-  <h2 style="text-align:center">Faculty</h2>                                                                                     
-  <div class="table-responsive"> 
-  <center>         
-  <table class="table table-bordered" style="max-width:60%">
-    <thead>
-      <tr style="border:1px solid black">
-        <th style="border:1px solid black">S No</th>
-        <th style="border:1px solid black">Image</th>
-        <th style="border:1px solid black">Faculty Name</th>
-        <th style="border:1px solid black">Designation</th>
-        <th style="border:1px solid black">Qualification</th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php
-                // LOOP TILL END OF DATA
-                while($rows=$result->fetch_assoc())
-                {
-            ?>
-            <tr style="border:1px solid black">
-                <!-- FETCHING DATA FROM EACH
-                    ROW OF EVERY COLUMN -->
-                <td class="text-center align-middle" style="border:1px solid black"><?php echo $rows['S.No'];?></td>
-                <td style="border:1px solid black "><?php echo '<img src="data:image/jpg;base64,'.base64_encode($rows['Image']).'" style="width:100px;height:100px;">';;?></td>
-                <td class="text-center align-middle" style="border:1px solid black "><a href="<?php echo $rows['filename'];?>"><?php echo $rows['Name'];?></a></td>
-                <td class="text-center align-middle" style="border:1px solid black "><?php echo $rows['Designation'];?></td>
-                <td class="text-center align-middle" style="border:1px solid black "><?php echo $rows['Qualification'];?></td>
-            </tr>
-            <?php
-                }
-            ?>
-    </tbody>
-  </table>
-  </center>
-  </div>
-</div>
-   
+<br>
+<h1 style="text-align:center">E-Resources</h1>
+<center>
+    <div>
+    <h4>B.Tech First Year</h4>
+    <a href = "https://drive.google.com/drive/folders/1_ECaspwuj0h9CRixy-VnlSiof1ZVmBlN?usp=share_link" target="_blank" rel="noopener noreferrer" >Click here</a>
+    </div>
+    <br>
 
+    <div>
+    <h4>B.Tech Second Year</h4>
+    <a href = "https://drive.google.com/drive/folders/1QQsVuv6FfGEuDy6G1VK3ODS9qyONg_wd?usp=share_link" target="_blank" rel="noopener noreferrer" >Click here</a>
+    </div>
+    <br>
+
+    <div>
+    <h4>B.Tech Third Year</h4>
+    <a href = "https://drive.google.com/drive/folders/1J3j41KiYHiTnNcACRfJNY1g6Zddaej38?usp=share_link" target="_blank" rel="noopener noreferrer" >Click here</a>
+    </div>
+    <br>
+
+    <div>
+    <h4>B.Tech Fourth Year</h4>
+    <a href = "https://drive.google.com/drive/folders/1aqt5WkAYBldnY3pINrahfO707aRgCyUo?usp=share_link" target="_blank" rel="noopener noreferrer" >Click here</a>
+    </div>
+</center>
+
+
+    
 <footer id="footer">
   <div class="container-fluid" style="background-color: black; height:50px">
 
@@ -160,8 +129,5 @@ html,body
   </div>
   </footer>
 
-
 </body>
- 
 </html>
-

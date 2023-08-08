@@ -3,9 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  } 
+
+
+html,body
+{
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+#footer .container-fluid {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+  </style>
+
 
   <title>CSIT DEPARTMENT</title>
+  <link rel="icon" href="./Images/cvr-logo.jpg" type="image/x-icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -23,57 +52,47 @@
   <link href="styles.css" rel="stylesheet">
 
 
-
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./logo.png" alt="Avatar Logo" style="width:350px;height:50px;" > 
+    <header  style="margin-bottom:85px">
+  <nav class="navbar fixed-top navbar-expand-lg bg-secondary navbar-dark">
+    <div class="container-fluid" style="margin-left:10px;">
+      <a class="navbar-brand" href="index.php">
+        <img src="./logo.png" alt="Avatar Logo" style="width:250px;height:50px;" > 
       </a>
-      <a class="navbar-brand" href="./index.html">
-        <h1 style="text-align:justify">DEPARTMENT OF CSIT</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav">
-           <li class="nav-item active"> <a class="nav-link" href="./index.html">Home </a> </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> About us</a>
-             <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="./About.html"> About CSIT</a></li>
-               <li><a class="dropdown-item" href="./vision.html"> Vission & Mission</a></li>
-             </ul>
-         </li>
-           <li class="nav-item"><a class="nav-link" href="#"> Faculty </a></li>
-           <li class="nav-item"><a class="nav-link" href="#"> Infrastructure </a></li>
+      </button>
+      <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto order-0">
+           <li class="nav-item active"> <a class="nav-link" href="index.php">Home </a> </li>
+           <li class="nav-item active"> <a class="nav-link" href="./About.html">About us </a> </li>
+           <li class="nav-item"><a class="nav-link" href="faculty.php"> Faculty </a></li>
+            <li class="nav-item"><a class="nav-link" href="infrastructure.html"> Infrastructure </a></li>
+           <li class="nav-item"><a class="nav-link" href="placements.php"> Placements </a></li>
            <li class="nav-item dropdown">
               <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Student Corner  </a>
                <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#"> Timetable</a></li>
-                 <li><a class="dropdown-item" href="#"> Achievements </a></li>
-                 <li><a class="dropdown-item" href="#"> E-Resources </a></li>
-                 <li><a class="dropdown-item" href="#"> Student Clubs </a></li>
+                 <li><a class="dropdown-item" href="Timetable.html"> Timetable</a></li>
+                 <li><a class="dropdown-item" href="Resources.html"> E-Resources </a></li>
+                 <li><a class="dropdown-item" href="student-club.html"> Student Clubs </a></li>
                </ul>
            </li>
-           <li class="nav-item"><a class="nav-link" href="#"> Contact us </a></li>
+           <li class="nav-item"><a class="nav-link" href="contact.html"> Contact us </a></li>
        </ul>
       
-
+       </div>
     </div>
   </nav>
-    
-    <div class="container-fluid" style="background-color:rgb(red, green, blue);">
+  </header>
+    <div class="container-fluid" >
         <div class="row align-items-start">
-            <div class="col-3">
-                <p></p>
-                <p></p>
-                <p></p>
+            <div class="col-sm-3">
+                <center>
                 <img src="./csit.jpg" class="img-fluid">
+                </center>
             </div>
-            <div class="col-7">
+            <div class="col-sm-8" style="border:1px solid grey; border-radius:25px; margin:auto">
                 <p></p>
                 <p class="text-align=justify" style="text-align:justify">True to its vision of “In pursuit of Excellence”, CVR College of Engineering was the first college in the State to introduce M.Tech programs in Artificial Intelligence and Data Sciences, well before AICTE could recognize them as emerging areas. Continuing the trend, CVR College pioneered a new B.Tech course in Computer Science and Information Technology (CSIT) in the year 2019, the brainchild of our Chairman. CVR was the only college in Telangana to do so at that time. The new course brought the best of both CSE and IT together providing CSIT graduates more opportunities than the graduates of CSE and IT courses. The emerging areas included in the new program have been identified by the national level committee as part of National Perspective Plan for Engineering Education and accepted by AICTE. Also, the courses provide employment and research opportunities in these areas. The department was renamed as Department of Emerging Technologies (ET) in 2022 and now also includes the UG programmes in AIML, Data Science and Cyber Security.</p>
                 <p></p>
@@ -83,6 +102,82 @@
             </div>
         </div>
     </div>
+
+
+    <br>
+    <br>
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-4">
+        <br><br>
+        <center>
+        <h5>Programmes Offered</h5>
+        <li>B.Tech</li>
+        <br>
+        <br>
+        <h4>B.Tech Academic Calendar</h4>
+        <h5>B.Tech I Year</h5>
+        <li><a href="https://drive.google.com/file/d/1-2MFt3-kfAmt5sQuElulzkFv-H0kJAo_/view?usp=share_link" target="_blank" rel="noopener noreferrer">Click here</a></li>
+        <br>
+        <h5>B.Tech II Year</h5>
+        <li><a href="https://drive.google.com/file/d/1UnGpyXxb2KFcmIO3m0ZDHcIb81By4GiW/view?usp=share_link" target="_blank" rel="noopener noreferrer">Click here</a></li>
+        <br>
+        <h5>B.Tech III Year</h5>
+        <li><a href="https://drive.google.com/file/d/1P2yV8_-myf39wIWhcd_uCa-PshyOJfe6/view?usp=share_link" target="_blank" rel="noopener noreferrer">Click here</a></li>
+        <br>
+        <h5>B.Tech IV Year</h5>
+        <li><a href="https://drive.google.com/file/d/1F-W71wMqlhBeRhnBYgXL34RVwSgAYIa3/view?usp=share_link" target="_blank" rel="noopener noreferrer">Click here</a></li>
+        <br>
+        
+
+        </center>
+    </div>
+    <div class="col-8">
+        <h3 style="text-align:center">Vision</h3>
+        <hr style="border:1px solid black; height:1px">
+        <p style="text-align:justify">To evolve as a Center of Excellence in emerging areas, impart quality education to produce ethical, motivated and skilled professionals to meet the ever-increasing technological & social challenges.</p>
+        <br>
+
+        <h3 style="text-align:center">Mission</h3>
+        <hr style="border:1px solid black; height:1px">
+        <p style="text-align: justify;"><b>M1:</b>To impart students with self-discipline, hard work, all-round personality development and creative problem-solving approach.</p>
+        <p style="text-align: justify;"><b>M2:</b>To provide quality-education by using the latest infrastructure and nurturing collaborative culture.</p>
+        <p style="text-align: justify;"><b>M3:</b>To provide students an opportunity to learn both foundational and experimental components in emerging areas.</p>
+        <p style="text-align: justify;"><b>M4:</b>To promote and nurture the spirit of innovation and entrepreneurship in our students.</p>
+        <p style="text-align: justify;"><b>M5:</b>To emerge as a Center of Excellence through Research, Consultancy and Development Activities.</p>
+        <br>
+
+    </div>
+    <div class="container-fluid" style="width:95%">
+
+        <h3 style="text-align:center">Program Educational Objectives (PEOs)</h3>
+        <hr style="border:1px solid black; height:1px">
+        <p style="text-align: justify;"><b>PEO 1:</b>Graduates will acquire capability to apply their knowledge and skills to solve various kinds of computational engineering problems.</p>
+        <p style="text-align: justify;"><b>PEO 2:</b>Graduates will exhibit the ability to apply the acquired skills in various domains and multi-disciplinary areas, to function ethically and meet the ever-increasing technological and social challenges.</p>
+        <p style="text-align: justify;"><b>PEO 3:</b>To evolve as resourceful engineers catering to dynamic industrial needs and engage in life-long learning.</p>
+        <p style="text-align: justify;"><b>PEO 4:</b>Graduates will acquire soft skills to adapt and excel in diverse global environment.</p>
+        <br>
+
+        <h3 style="text-align:center">Program Specific Outcomes (PSOs)</h3>
+        <hr style="border:1px solid black; height:1px">
+        <p style="text-align: justify;"><b>PSO 1:</b>An ability to analyse a problem, design algorithm, identify and define the computing requirements appropriate to its solution and implement the same.</p>
+        <p style="text-align: justify;"><b>PSO 2:</b>Design an algorithm, component, or process to meet desired needs, within realistic constraints through analytical, logical and problem solving skills.</p>
+        <p style="text-align: justify;"><b>PSO 3:</b>Effectively integrate solutions using emerging areas into the user environment.</p>
+        <p style="text-align: justify;"><b>PSO 4:</b>Demonstrate an ability of analyzing the common business functions to design and develop appropriate solutions in various domains and multi-disciplinary areas.</p>
+
+    </div>
+</div>
+    </div>
     
+<footer id="footer">
+  <div class="container-fluid" style="background-color: black; height:50px">
+
+
+      <div class="credit" style="text-align:center; color:white">    Copyright ©2023:<span>CSIT Department</span>.All Rights Reserved </div>
+
+    
+  </div>
+  </footer>
+
 </body>
 </html>

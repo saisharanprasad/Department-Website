@@ -3,9 +3,39 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  } 
+
+
+html,body
+{
+
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+
+}
+
+
+  </style>
+
 
   <title>CSIT DEPARTMENT</title>
+    <link rel="icon" href="./Images/cvr-logo.jpg" type="image/x-icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -21,52 +51,63 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link href="styles.css" rel="stylesheet">
-
+    
 
 </head>
 <body>
-  <?php include 'index.php'?>
-  <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./logo.png" alt="Avatar Logo" style="width:350px;height:50px;" > 
+      <a class="navbar-brand" href="index.php">
+        <img src="./logo.png" alt="Avatar Logo" style="width:250px;height:50px;" > 
       </a>
-      <a class="navbar-brand" href="./index.html">
-        <h1 style="text-align:justify">DEPARTMENT OF CSIT</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav">
-           <li class="nav-item active"> <a class="nav-link" href="./index.html">Home </a> </li>
-           <li class="nav-item dropdown">
-            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> About us</a>
-             <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="./About.html"> About CSIT</a></li>
-               <li><a class="dropdown-item" href="./vision.html"> Vission & Mission</a></li>
-             </ul>
-         </li>
-           <li class="nav-item"><a class="nav-link" href="#"> Faculty </a></li>
-           <li class="nav-item"><a class="nav-link" href="#"> Infrastructure </a></li>
+      </button>
+      <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto order-0">
+           <li class="nav-item active"> <a class="nav-link" href="index.php">Home </a> </li>
+            <li class="nav-item active"> <a class="nav-link" href="./About.html">About us </a> </li>
+           <li class="nav-item"><a class="nav-link" href="faculty.php"> Faculty </a></li>
+           <li class="nav-item"><a class="nav-link" href="infrastructure.html"> Infrastructure </a></li>
+           <li class="nav-item"><a class="nav-link" href="placements.php"> Placements </a></li>
            <li class="nav-item dropdown">
               <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Student Corner  </a>
                <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#"> Timetable</a></li>
-                 <li><a class="dropdown-item" href="#"> Achievements </a></li>
-                 <li><a class="dropdown-item" href="#"> E-Resources </a></li>
-                 <li><a class="dropdown-item" href="#"> Student Clubs </a></li>
+                 <li><a class="dropdown-item" href="Timetable.html"> Timetable</a></li>
+                 <li><a class="dropdown-item" href="Resources.html"> E-Resources </a></li>
+                 <li><a class="dropdown-item" href="student-club.html"> Student Clubs </a></li>
                </ul>
            </li>
-           <li class="nav-item"><a class="nav-link" href="#"> Contact us </a></li>
+           <li class="nav-item"><a class="nav-link" href="contact.html"> Contact us </a></li>
        </ul>
       
-
+       </div>
     </div>
   </nav>
   <h1 style="text-align: center;">Time Table</h1>
-  <center>
-  <a href = "1.pdf" download = "file"> 
-    <b >Download</b>
+    <center>
+    <div>
+    <h4>B.Tech IV Year Time Table for the A.Y. 2022-23</h4>
+    <a href = "https://drive.google.com/file/d/1ifEJQkAjNWYWA4wW51TgmPOilwwx8W5J/view?usp=share_link" target="_blank" rel="noopener noreferrer" >Click here</a>
+    </div>
+    <br>
+    <div>
+    <h4>B.Tech III Year Time Table for the A.Y. 2022-23</h4>
+    <a href = "https://drive.google.com/file/d/12RaCf349edpfVCVJABx42MjopuIpwsSV/view?usp=share_link" target="_blank" rel="noopener noreferrer" >Click here</a>
+    </div>
     </center>
+
+    
+<footer id="footer">
+  <div class="container-fluid" style="background-color: black; height:50px">
+
+
+      <div class="credit" style="text-align:center; color:white">    Copyright ©2023:<span>CSIT Department</span>.All Rights Reserved </div>
+
+    
+  </div>
+  </footer>
+
   </body>
 </html>
