@@ -50,7 +50,7 @@
       </button>
       <div class="collapse navbar-collapse " id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto order-0">
-           <li class="nav-item active"> <a class="nav-link" href="./index.html">Home </a> </li>
+           <li class="nav-item active"> <a class="nav-link" href="index.php">Home </a> </li>
            <li class="nav-item dropdown">
             <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> About us</a>
              <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
              </ul>
          </li>
            <li class="nav-item"><a class="nav-link" href="faculty.html"> Faculty </a></li>
-           <li class="nav-item"><a class="nav-link" href="#"> Infrastructure </a></li>
+           <li class="nav-item"><a class="nav-link" href="index.php"> Infrastructure </a></li>
            <li class="nav-item dropdown">
               <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Student Corner  </a>
                <ul class="dropdown-menu">
@@ -84,23 +84,23 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner" style="max-height:500px">
+    <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="./1.jpg" class="img-fluid d-block vh-100 vw-100 object-cover" alt="slide 1" style="max-height:500px;">
+        <img src="./1.jpg" class="img-fluid d-block vh-100 vw-100" alt="slide 1" style="max-width: 100%;max-height: 100%;">
         <div class="carousel-caption d-none d-md-block">
-          <p >First slide label</p>
+          <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
-        <img src="./2.jpg" class="img-fluid  d-block vh-100 vw-100 object-cover" alt="..." style="max-height:500px;">
+        <img src="./2.jpg" class="img-fluid  d-block vh-100 vw-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
-        <img src="./3.jpg" class="d-block vh-100 vw-100 object-cover" alt="..." style="max-height:500px;">
+        <img src="./3.jpg" class="d-block vh-100 vw-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
@@ -120,7 +120,6 @@
     <h2 style="text-align:center">Overview</h2>
     <p>About CSIT</p>
   </div>
-  
   <div class="container-fluid">
     <h2 style="text-align:center">Message from HOD</h2>
     <div class="row">
@@ -133,15 +132,18 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid" style="background-color: azure;">
-    <div class="row">
-      <div class="col" style="overflow: auto; max-width:7500px; max-height:150px">uyabukab,b6trfuyionjhbgtv67yuhjhbgt6y78uiuytfr5t67<br>yuijnhbgvtf567yuhygtfyhui8y7t6yghujy7t6fgvhbj<br>nuhbjnkojhuygtf6t7y8ibhvgtf67uhbhvgcrdcgvhbjhu<br>7t6ftvyhbi8y7yvhbjnhgftrfd56gubhvcf<br>hvgtf67yhubhtfrdcfgvhbju6<br>t5fdrfcgvhbutdrftg<br>yuhjbhvgc6t7yuhjbhfrdtfygbhvgctf<br>jtrhcjyfkyfvkujyfhgvyjktfgv<br>6g7uj hvgtf</div>
-      <div class="col" style="overflow: auto;">ouyvbkjbavkub</div>
+
+  <div class="container-fluid" style="background-color:rgb(255, 0, 128)">
+    <h2 style="text-align:center">News</h2>
+    <div class="row align-items-start">
+      <div class="col">
+        12/01/2023
+      </div>
+      <div class="col-7 align-items-left">
+        <p class="blink">One of three columns jhgkjzcbkubkzvk kuajvbkj,bvk uakbvhbvk</p>
+      </div>
     </div>
   </div>
-
-
-
 
   <div class="container-fluid" style="background-color: grey">
     <div class="row align-items-start">

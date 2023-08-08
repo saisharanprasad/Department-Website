@@ -70,3 +70,25 @@
     </center>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+<?php
+                while($rows=$result->fetch_assoc())
+                {
+            ?>
+            <tr style="border:1px solid black">
+                <td style="border:1px solid black"><?php echo $rows['S No'];?></td>
+                <td style="border:1px solid black"><?php echo $rows['Company'];?></td>
+                <td style="border:1px solid black;text-align:center"><?php echo $rows['Number of Students Placed'];?></td>
+                <td style="border:1px solid black"><?php echo $rows['Package'];?></td>
+            </tr>
+            <?php
+                }
+            ?>
