@@ -1,14 +1,13 @@
 <?php
  
-// Username is root
+
 $user = 'ezyro_33683901';
 $password = 'vbjfz6p';
  
-// Database name is geeksforgeeks
+
 $database = 'ezyro_33683901_csit';
  
-// Server is localhost with
-// port number 3306
+
 $servername='sql105.ezyro.com';
 $mysqli = new mysqli($servername, $user,
                 $password, $database);
